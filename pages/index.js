@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import io from 'Socket.IO-client'
+import Button from '@mui/material/Button'
 let socket;
 
 const Home = () => {
@@ -26,11 +27,14 @@ const Home = () => {
   }
 
   return (
+    <>
     <input
       placeholder="Type something"
       value={input}
       onChange={onChangeHandler}
     />
+    <Button>TEST</Button>
+</>
   )
 }
 
